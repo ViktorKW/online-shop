@@ -1,0 +1,31 @@
+.btn-base {
+  /* Button / Primary / L */
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: relative;
+
+  /* Active/Fill */
+
+  background: #00c2ff;
+  /* Active/Fill */
+
+  border: 1px solid #00c2ff;
+  border-radius: 6px;
+}
+
+.btn-l {
+  @extend .btn-base;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px 10px 10px;
+  gap: 10px;
+
+  position: relative;
+}

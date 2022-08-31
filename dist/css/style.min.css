@@ -1,0 +1,64 @@
+.btn-base, .btn-l {
+  /* Button / Primary / L */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  /* Active/Fill */
+  background: #00c2ff;
+  /* Active/Fill */
+  border: 1px solid #00c2ff;
+  border-radius: 6px;
+}
+
+.btn-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px 10px 10px;
+  gap: 10px;
+  position: relative;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 100px;
+  gap: 100px;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+* {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.header-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.btn-l-text {
+  width: 71px;
+  height: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  /* Basic / White */
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
