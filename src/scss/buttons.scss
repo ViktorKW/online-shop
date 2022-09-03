@@ -8,7 +8,6 @@
   align-items: center;
 
   position: relative;
-
   /* Active/Fill */
 
   background: #00c2ff;
@@ -20,12 +19,36 @@
 
 .btn-l {
   @extend .btn-base;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 133px;
+  height: 48px;
   padding: 10px 14px 10px 10px;
   gap: 10px;
-
   position: relative;
+}
+
+.btn-l:hover {
+  /* Active/Fill Hover */
+
+  background: #2fdaff;
+  /* Active/Fill Hover */
+
+  border: 1px solid #2fdaff;
+}
+
+.btn-l:active {
+  /* Active/Fill Active */
+
+  background: #00ace2;
+  /* Active/Fill Active */
+
+  border: 1px solid #00ace2;
+}
+
+.btn-l:focus {
+  /* Active/Fill */
+
+  background: #00c2ff;
+  /* Accent/Fill */
+
+  border: 1px solid #00ffd1;
 }

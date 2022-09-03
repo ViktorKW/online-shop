@@ -43,7 +43,7 @@ function minJS() {
 }
 
 function minImg() {
-  return src(["src/images/*"]).pipe(imagemin()).pipe(dest("dist/img"));
+  return src(["src/img/*"]).pipe(imagemin()).pipe(dest("dist/img"));
 }
 
 exports.default = series(minCSS, minJS, minImg, browserSyncServer, watchTask);
