@@ -1,4 +1,5 @@
 .btn-base {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,19 +17,17 @@
   gap: 10px;
 }
 
+.btn-l:focus {
+  background: #00c2ff;
+  border: 1px solid #00ffd1;
+}
 .btn-l:hover {
   background: #2fdaff;
   border: 1px solid #2fdaff;
 }
-
 .btn-l:active {
   background: #00ace2;
   border: 1px solid #00ace2;
-}
-
-.btn-l:focus {
-  background: #00c2ff;
-  border: 1px solid #00ffd1;
 }
 
 //for shop-now button

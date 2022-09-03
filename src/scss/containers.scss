@@ -51,5 +51,17 @@
   background: #dafff8;
 }
 
-.title-container {
+// .title-container {
+//   //nothing in this style, but it exist
+// }
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 200px;
+  gap: 40px;
+
+  height: 1781px;
+  background-color: brown;
 }
