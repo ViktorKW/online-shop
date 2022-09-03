@@ -1,17 +1,9 @@
 .btn-base {
-  /* Button / Primary / L */
   box-sizing: border-box;
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  position: relative;
-  /* Active/Fill */
-
   background: #00c2ff;
-  /* Active/Fill */
 
   border: 1px solid #00c2ff;
   border-radius: 6px;
@@ -27,28 +19,22 @@
 }
 
 .btn-l:hover {
-  /* Active/Fill Hover */
-
   background: #2fdaff;
-  /* Active/Fill Hover */
-
   border: 1px solid #2fdaff;
 }
 
 .btn-l:active {
-  /* Active/Fill Active */
-
   background: #00ace2;
-  /* Active/Fill Active */
-
   border: 1px solid #00ace2;
 }
 
 .btn-l:focus {
-  /* Active/Fill */
-
   background: #00c2ff;
-  /* Accent/Fill */
-
   border: 1px solid #00ffd1;
+}
+
+//for shop-now button
+.shop-now {
+  padding: 10px 14px;
+  width: 159px;
 }
