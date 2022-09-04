@@ -1,0 +1,20 @@
+.category-img {
+  /* Category item */
+
+  width: 480px;
+  height: 200px;
+
+  background: linear-gradient(
+    0deg,
+    rgba(0, 106, 139, 0.3),
+    rgba(0, 106, 139, 0.3)
+  );
+  border-radius: 6px;
+}
+
+.product-img {
+  width: 350px;
+  height: 350px;
+
+  border-radius: 6px;
+}
