@@ -4,12 +4,20 @@
   font-weight: 500;
 }
 
-.small-text {
+.tiny-text {
   font-size: 12px;
   line-height: 15px;
 
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.small-text {
+  font-size: 14px;
+  line-height: 17px;
+}
+.medium-text {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header-text {
@@ -61,15 +69,36 @@
 
 .badge-text {
   @extend .small-text;
+  display: inline-block;
   padding: 6px;
-  width: 108px;
-  height: 27px;
-
   background: #00ffd1;
   border-radius: 4px;
+}
+
+.sale-badge-text {
+  @extend .badge-text;
+  position: absolute;
 }
 
 .hero-text {
   font-size: 16px;
   line-height: 24px;
+}
+
+.current-price-text {
+  @extend .medium-text;
+  color: #00bf9d;
+}
+
+.old-price-text {
+  @extend .medium-text;
+  text-decoration-line: line-through;
+  color: #bababa;
+}
+
+.navigation-text {
+  @extend .small-text;
+  text-align: center;
+  text-decoration: none;
+  color: #00c2ff;
 }

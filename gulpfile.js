@@ -6,6 +6,16 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const browserSync = require("browser-sync");
 
+// // --------for testing start
+// var open = require("gulp-open");
+// // Default usage:
+// // Open one file with default application
+
+// gulp.task("open", function () {
+//   gulp.src("home.html").pipe(open());
+// });
+// // --------for testing end
+
 function browserSyncServer(cb) {
   browserSync.init({
     server: {
@@ -47,31 +57,3 @@ function minImg() {
 }
 
 exports.default = series(minCSS, minJS, minImg, browserSyncServer, watchTask);
-
-// const { watch, series } = require("gulp");
-
-// const browserSync = require("browser-sync");
-
-// function browserSyncServer(cb) {
-//   browserSync.init({
-//     server: {
-//       baseDir: ".",
-//     },
-//     port: 8030,
-//     ui: {
-//       port: 8031,
-//     },
-//   });
-//   cb();
-// }
-
-// function browserSyncReload(cb) {
-//   browserSync.reload();
-//   cb();
-// }
-
-// function watchTask() {
-//   watch(["html/**/*.html", "css/**/*.css", "js/*.js"], browserSyncReload);
-// }
-
-// exports.default = series(browserSyncServer, watchTask);
